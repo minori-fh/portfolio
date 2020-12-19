@@ -4,21 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/work.css">
-    <script src="logic/logic.js"></script>
+    <script type="text/javascript" src="logic/logic.js"></script>   
 
     <title>Minori Hashimoto</title>
+
 </head>
 <body>
-
-    <div class="row col-12 menubar-wrapper">
-        <button class="menu-btn"><h3 class="grey gotoAbout">01. <span style="font-family: 'Raleway', sans-serif; font-size: 18px;">about</span></h3></button>
-        <button class="menu-btn"><h3 class="grey gotoExp" >02. <span style="font-family: 'Raleway', sans-serif;  font-size: 18px;">experience</span></h3></button>
-        <button class="menu-btn"><h3 class="grey gotoProj">03. <span style="font-family: 'Raleway', sans-serif;  font-size: 18px;">work</span></h3></button>
+<!-- FIXED MENUBAR -->
+    <div class="row">
+        <div class="col-12 menubar-wrapper">
+            <button class="menu-btn"><h3 class="grey gotoAbout">01.<span class="menu-spn">about</span></h3></button>
+            <button class="menu-btn"><h3 class="grey gotoExp" >02.<span class="menu-spn">experience</span></h3></button>
+            <button class="menu-btn"><h3 class="grey gotoProj">03.<span class="menu-spn">work</span></h3></button>
+        </div>
     </div>
-    
+
+<!-- HOME PAGE -->
+<div class="row page" id="homepage">
+    <div class="col-2 col-s-1">
+
+    </div>
+    <div class="col-3 col-s-4" id="hello-txt">
+            <!-- parallax HELLO scene start -->
+            <div id="scene-hello-wrapper">
+                <div id="scene-hello">
+                    <div data-depth="0.1">
+                        <h1 class="pink">HE</br> 
+                            LLO,</h1>
+                    </div>
+                    <div data-depth="0.5">
+                        <h1 class="blue">HE</br> 
+                            LLO,</h1>
+                    </div>
+                    <div data-depth="0.8">
+                        <h1 class="offW">HE</br> 
+                        LLO,</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- parallax scene end -->
+    </div>
+    <div class="col-6 col-s-6" id="hello-sub">
+        <div id="my-name-wrapper">
+            <h2 class="offW" id="intro-name"></h2><span class="blinking-cursor">|</span>
+        </div>
+        <div>
+            <p class="grey" id="intro">I'm a Software Engineer with an eye for design.</br>
+                Caffiene-addict. Dog mom.</br>
+                Minimalist.</br></p>
+        </div>
+    </div>
+    <div class="col-1 col-s-1">
+
+    </div>
+</div>
 </body>
 </html>

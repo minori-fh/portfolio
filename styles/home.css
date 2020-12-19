@@ -1,0 +1,92 @@
+
+
+#home-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center; 
+    height: 95%;
+    align-items: center;
+}
+
+#hello-txt {padding-top: 10%;}
+#hello-sub {padding-top: 15%;}
+
+/* .hello-col {
+    padding-top: 15%;
+} */
+
+#scene-hello-wrapper {
+    height: auto;
+    width: 80%;
+    /* padding-left: 70px;  */
+}
+
+#home-intro-wrapper {
+    height: auto;
+    width: 60vw;
+    text-align: left; 
+    margin-left: 40px;
+}
+
+#my-name-wrapper {
+    width: 370px;
+    height: 50px;
+    position: relative;
+}
+
+#intro-name {
+    display: inline-block;
+}
+
+.blinking-cursor {
+    animation: 1s blink step-end infinite;
+    font-size: 30px;
+    position: relative;
+    bottom: 5px;
+}
+  
+@keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color:rgb(230, 230, 230);
+    }
+}
+  
+
+#intro {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1248px) {
+    #intro {font-size: 18px;}
+    #hello-txt {padding-top: 15%;}
+    #hello-sub {padding-top: 20%;}
+}
+
+/* TABLET */
+@media only screen and (min-width: 600px) and (max-width: 768px)  {
+    #intro {
+        font-size: 16px;
+    }
+    #hello-txt {
+        padding-top: 25%;
+    }
+    
+    #hello-sub {
+        padding-top: 28%;
+    }
+
+    
+}
+
+/* @media only screen and (max-width: 600px) {
+
+}
+
+
