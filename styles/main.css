@@ -14,6 +14,7 @@ html, body {
     height: 100%; 
     width: 100%;
     max-width: 100%;
+    max-height: 100%;
     margin: 0px; 
     padding: 0px;
     color: rgb(8, 8, 8);
@@ -134,19 +135,8 @@ h3 {
 /* DESKTOP */
 @media only screen and (min-width: 768px) and (max-width: 1248px){
 /* TEXT STYLES */
-h1 {
-    font-size: 110px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 16px;
-}
-
-
+    h1 {font-size: 110px;}
+    h2 {font-size: 30px;}
 }
 
 /* TABLET */
@@ -166,16 +156,28 @@ h3 {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-    h1 {
-        font-size: 85px;
-    }
-    h2 {
-        font-size: 26px;
-    }
+    h1 {font-size: 106px;}
+    h2 {font-size: 30px;}
 }
 
 /* MOBILE */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    /* GRID STYLES */
+    /* column styling */
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
 
+    #hello-txt {display: none;}
+    h2 {font-size: 28px;}
 }
 
