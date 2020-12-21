@@ -1,5 +1,19 @@
 $(document).ready(function(){
 
+    // page displays
+    $("#aboutpage, #workpage").css("display","none");
+
+    $("#arrowto-about").on("click", function(){
+        $('#aboutpage').css("display", "inherit")
+
+        $('html, body').animate({scrollTop: $("#aboutpage").offset().top}, 700)
+    })
+
+    $("#arrowto-work").on("click", function(){
+        $('#workpage').css("display", "inherit")
+        $('html, body').animate({scrollTop: $("#workpage").offset().top}, 700)
+    })
+
     // typewriter function to print out name in home page
     let i = 0;
     let txt = "my name is Minori"
