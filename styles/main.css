@@ -131,6 +131,92 @@ h3 {
     font-size: 18px;
 }
 
+/* fixed contact information */
+.contact-container {
+    height: 400px;
+    width: 30px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.contact-wrapper {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#animation-line-wrapper {
+    width: 100%;
+    height: 100px;
+}
+
+.icon-wrapper {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+#icon-wrapper-email{
+    height: 175px;
+    width: 20px;
+    writing-mode: vertical-rl;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    letter-spacing: 0.1em;
+}
+
+.contact-img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    fill: rgb(56, 56, 56);
+}
+
+#contact-col {
+    display: flex;
+    justify-content: center;
+}
+
+svg:hover {
+    fill: rgb(230, 230, 230);
+}
+
+#email-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+#mailto-link {
+    color: rgb(230, 230, 230) !important;
+    text-decoration: none;
+}
+
+/* animation lines */
+.animation-line-vt {
+    width: 1px;
+    height: 1px;
+    border-left: solid rgb(56, 56, 56) 1px;
+    margin-left: 50%;
+
+    animation: grow-vt 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow-vt {
+    100% {
+        height: 100%;
+    }
+}
+
 
 /* DESKTOP */
 @media only screen and (min-width: 768px) and (max-width: 1248px){
