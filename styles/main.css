@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@400;500&family=Roboto:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
 /* GENERIC STYLES */
 * {
     box-sizing: border-box;
@@ -18,7 +20,6 @@ html, body {
     margin: 0px; 
     padding: 0px;
     color: rgb(8, 8, 8);
-    background-color: rgb(8, 8, 8);
 }
 
 p {
@@ -68,7 +69,6 @@ button:focus {
 /* TEXT STYLES */
 h1, h2, h3 {
     font-weight: bold; 
-    font-family: 'Raleway', sans-serif;
     margin: 0px;
 }
 
@@ -76,7 +76,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 /* COLOR STYLES */
-.offW {color: rgb(230, 230, 230)}; .offB {color: rgb(8, 8, 8)}
+.offW {color: rgb(230, 230, 230)}; .offB {color: rgb(8, 8, 8) !important}
 .grey {color: rgb(56, 56, 56)}; .lightgrey {color: rgb(167, 167, 167)}
 .blue {color: rgb(0, 255, 221)}
 .pink { color: rgb(255, 50, 152)}
@@ -93,11 +93,12 @@ h3 {
 
 /* TEXT STYLES */
 h1 {
-    font-size: 140px;
+    font-size: 140px; font-family: 'Raleway', sans-serif;
 }
 
 h2 {
     font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h3 {
@@ -124,12 +125,12 @@ h3 {
 .menubar-wrapper {
     width: 100%;
     position: fixed;
-    padding: 10px 30px 10px 0px;
     height: 5vh;
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
-    background-color: rgb(8, 8, 8);
+    background-color: rgba(8, 8, 8, 0.979);
+    padding-right: 30px;
 }
 
 .menu-btn {
@@ -137,8 +138,8 @@ h3 {
 }
 
 .menu-spn {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
 }
 
 /* fixed contact information */
@@ -174,9 +175,7 @@ h3 {
     height: 175px;
     width: 20px;
     writing-mode: vertical-rl;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     color: rgb(39, 39, 39);
     letter-spacing: 0.1em;
@@ -200,14 +199,18 @@ svg:hover {
     fill: rgb(230, 230, 230);
 }
 
-#email-wrapper {
+.email-wrapper {
     height: 100%;
     width: 100%;
 }
 
 #mailto-link {
-    color: rgb(230, 230, 230) !important;
-    text-decoration: none;
+    text-decoration: none !important;
+    color: rgb(56, 56, 56);
+}
+
+#mailto-link:hover {
+    color:  rgb(230, 230, 230);
 }
 
 /* animation lines */

@@ -1,3 +1,7 @@
+#homepage {
+  background-color: rgb(8, 8, 8);
+}
+
 /* HEL LO text styles */
 #home-wrapper {
     display: flex;
@@ -21,7 +25,7 @@
 
 /* typewriter styles */
 #my-name-wrapper {
-    width: 370px;
+    width: 390px;
     height: 50px;
     position: relative;
 }
@@ -48,12 +52,6 @@
 }
 
 /* about me paragraph styles */
-.num-wrapper {
-    color: white;
-    font-family: 'Roboto', sans-serif;  
-    font-size: 16px;
-  }
-
 #intro {
     font-size: 20px;
     line-height: 1.4;
@@ -80,7 +78,7 @@
 .about-menu-btn {
     margin-right: 8px;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Noto Sans', sans-serif;
     padding: 3px 12px;
 }
 

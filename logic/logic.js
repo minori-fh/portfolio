@@ -1,6 +1,7 @@
 $(document).ready(function(){
     // general
     $("#about-stack-content").css("display", "none")
+    $("#mailto-link-black").css("display", "none")
 
     // page displays
     $("#aboutpage, #workpage").css("display","none");
@@ -11,8 +12,9 @@ $(document).ready(function(){
         $('#work-btn').removeClass("grey"); $('#work-btn').addClass("offW")
 
         $('#about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
-
-
+        $("#mailto-link-white").addClass("text-blur-out")
+        $("#mailto-link-white").css("display", "none")
+        $("#mailto-link-black").css("display", "inherit")
     })
 
     $(".arrowto-about").on("click", function(){
@@ -20,7 +22,6 @@ $(document).ready(function(){
         $('#about-btn').removeClass("grey"); $('#about-btn').addClass("offW")
 
         $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
-
     })
 
     // show about/stack display
@@ -35,6 +36,31 @@ $(document).ready(function(){
         $('#about-content').css("display","inherit"); $('#about-content').addClass("slide-in-right")   
         $('#see-about').addClass("about-btn-selected"); $('#see-stack').removeClass("about-btn-selected")   
     })
+
+    // contact bar change color logic
+    $('#front').height($('#back').height())
+
+    let scrollpx; let percent_complete;
+
+    let mailheight = parseInt($(".email-wrapper").height())
+    let spaceheight = (300 - (mailheight + 60))/3
+    let mb = 100 + 15 + 20 + spaceheight
+
+    console.log("MB " + mb)
+
+    window.onscroll = function(event) {
+        scrollpx = $(window).scrollTop(); console.log(scrollpx)
+
+        if(scrollpx > mb){
+
+        }
+    };
+
+    percent_complete = 45
+    bb_width = (percent_complete * $('#back').height())/100
+    console.log("THIS IS BB_WIDTH: " + bb_width)
+    $('#boundbox').css('height', bb_width.toString())
+
 
     // typewriter function to print out name in home page
     let i = 0;
