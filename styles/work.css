@@ -9,9 +9,14 @@
     font-size: 12px;
 }
 
-.project-description-wrapper {
+.project-description-wrapper-left {
     text-align: left;
     padding-left: 30px;
+}
+
+.project-description-wrapper-right {
+    text-align: right;
+    padding-right: 30px;
 }
 
 #workheader-wrapper {
@@ -19,8 +24,28 @@
     padding-top: 35px;
 }
 
+.project-title {
+    font-size: 26px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.project-title-sub {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project-details {
+    margin-top: 15px !important;
+    font-size: 14px;
+}
+
 .project-img {
     width: 100%;
+}
+
+.svg-wrapper {
+    margin-top: 25px;
 }
 
 
