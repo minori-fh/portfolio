@@ -1,12 +1,16 @@
 #workpage {
-    height: 95vh !important;
+    /* height: 95vh !important; */
     background-color: rgb(230, 230, 230);
+    height: auto !important;
+    min-height: 95vh;
+    margin-top: 5vh;
 }
 
 .project-wrapper {
-    height: 70%;
+    height: 370px;
     text-align: center;
     font-size: 12px;
+    margin-bottom: 100px;
 }
 
 .project-description-wrapper-left {
@@ -25,13 +29,13 @@
 }
 
 .project-title {
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
 }
 
 .project-title-sub {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -41,11 +45,20 @@
 }
 
 .project-img {
-    width: 100%;
+    width: 95%;
 }
 
 .svg-wrapper {
     margin-top: 25px;
+}
+
+
+
+/* contact styles */
+
+#contactpage {
+    height: 350px;
+    background-color: rgb(8, 8, 8);
 }
 
 

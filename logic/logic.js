@@ -4,10 +4,11 @@ $(document).ready(function(){
     $("#mailto-link-black").css("display", "none")
 
     // page displays
-    $("#aboutpage, #workpage").css("display","none");
+    $("#aboutpage, #workpage, #contactpage").css("display","none");
 
     $(".arrowto-work").on("click", function(){
         $('#workpage').css("display", "inherit")
+        $('#contactpage').css("display", "inherit")
         $('html, body').animate({scrollTop: $("#workpage").offset().top}, 700)
         $('#work-btn').removeClass("grey"); $('#work-btn').addClass("offW")
 
@@ -23,6 +24,16 @@ $(document).ready(function(){
 
         $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
     })
+
+    $(".arrowto-contact").on("click", function(){
+        $('#contactpage').css("display", "inherit")
+        $('html, body').animate({scrollTop: $("#contactpage").offset().top}, 700)
+        $('#contact-btn').removeClass("grey"); $('#contact-btn').addClass("offW")
+
+        $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
+        $('about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
+    })
+
 
     // show about/stack display
     $("#see-stack").on("click", function(){
