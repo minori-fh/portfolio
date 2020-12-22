@@ -1,17 +1,39 @@
 $(document).ready(function(){
+    // general
+    $("#about-stack-content").css("display", "none")
 
     // page displays
     $("#aboutpage, #workpage").css("display","none");
 
-    $("#arrowto-about").on("click", function(){
-        $('#aboutpage').css("display", "inherit")
-
-        $('html, body').animate({scrollTop: $("#aboutpage").offset().top}, 700)
-    })
-
-    $("#arrowto-work").on("click", function(){
+    $(".arrowto-work").on("click", function(){
         $('#workpage').css("display", "inherit")
         $('html, body').animate({scrollTop: $("#workpage").offset().top}, 700)
+        $('#work-btn').removeClass("grey"); $('#work-btn').addClass("offW")
+
+        $('#about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
+
+
+    })
+
+    $(".arrowto-about").on("click", function(){
+        $('html, body').animate({scrollTop: $("#homepage").offset().top}, 700)
+        $('#about-btn').removeClass("grey"); $('#about-btn').addClass("offW")
+
+        $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
+
+    })
+
+    // show about/stack display
+    $("#see-stack").on("click", function(){
+        $('#about-content').addClass("slide-out-left"); $('#about-content').css("display","none") 
+        $('#about-stack-content').css("display","inherit"); $('#about-stack-content').addClass("slide-in-right")   
+        $('#see-stack').addClass("about-btn-selected"); $('#see-about').removeClass("about-btn-selected")   
+    })
+
+    $("#see-about").on("click", function(){
+        $('#about-stack-content').addClass("slide-out-left"); $('#about-stack-content').css("display","none")
+        $('#about-content').css("display","inherit"); $('#about-content').addClass("slide-in-right")   
+        $('#see-about').addClass("about-btn-selected"); $('#see-stack').removeClass("about-btn-selected")   
     })
 
     // typewriter function to print out name in home page

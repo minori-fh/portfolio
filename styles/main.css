@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@400;500&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* GENERIC STYLES */
 * {
@@ -25,15 +26,23 @@ p {
 }
 
 .page {
-    height: 90vh; 
+    height: 95vh; 
     width: 100%;
     margin-top: 5vh;
     font-family: 'Open Sans', sans-serif;
 }
 
+.pagewrapper-row {
+    height: 95%;
+}
+
 button {
     border: none; 
     background-color: transparent;
+}
+
+button:focus {
+    outline: none;
 }
 
 /* GRID STYLES */
@@ -115,11 +124,12 @@ h3 {
 .menubar-wrapper {
     width: 100%;
     position: fixed;
-    padding: 15px 30px 0px 0px;
+    padding: 10px 30px 10px 0px;
     height: 5vh;
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
+    background-color: rgb(8, 8, 8);
 }
 
 .menu-btn {
@@ -219,7 +229,7 @@ svg:hover {
 
 /* fixed nav styles */
 .nav-arrow-wrapper {
-    height: 5vh;
+    height: 5%;
     text-align: center;
 }
 
@@ -252,7 +262,7 @@ svg:hover {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
-    h1 {font-size: 106px;}
+    h1 {font-size: 100px;}
     h2 {font-size: 30px;}
 }
 
