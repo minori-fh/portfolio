@@ -33,21 +33,33 @@
 }
 
 .project-title-sub {
-    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .project-details {
-    margin-top: 15px !important;
+    margin-top: 14px !important;
     font-size: 14px;
 }
 
+.project-desc {
+    font-size: 13px;
+}
+
 .project-img {
-    width: 95%;
+    width: 90%;
 }
 
 .svg-wrapper {
     margin-top: 25px;
+}
+
+.project-img-wrapper, .project-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 
@@ -55,7 +67,7 @@
 /* contact styles */
 
 #contactpage {
-    height: 100px;
+    height: 200px;
     /* background-color: rgb(8, 8, 8); */
 }
 
@@ -68,12 +80,18 @@
     padding: 3px 12px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100px;
 }
 
 #contact-wrapper {
     text-align: center;
-    padding-top: 20px;
     font-weight: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 25px;
+
 }
 
 #designcredit {
