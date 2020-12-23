@@ -130,8 +130,9 @@ h3 {
     flex-direction: row; 
     justify-content: flex-end;
     background-color: rgba(8, 8, 8, 0.979);
-    padding-right: 30px;
+    padding-right: 60px;
 }
+
 
 .menu-btn {
     margin-left: 25px;
@@ -139,7 +140,7 @@ h3 {
 
 .menu-spn {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* fixed contact information */
@@ -207,6 +208,7 @@ svg:hover {
 #mailto-link {
     text-decoration: none !important;
     color: rgb(56, 56, 56);
+    font-weight: 700;
 }
 
 #mailto-link:hover {

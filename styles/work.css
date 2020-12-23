@@ -1,9 +1,7 @@
 #workpage {
-    /* height: 95vh !important; */
-    background-color: rgb(230, 230, 230);
     height: auto !important;
     min-height: 95vh;
-    margin-top: 5vh;
+    padding-top: 5vh;
 }
 
 .project-wrapper {
@@ -24,7 +22,7 @@
 }
 
 #workheader-wrapper {
-    height: 175px;
+    height: 180px;
     padding-top: 35px;
 }
 
@@ -57,8 +55,33 @@
 /* contact styles */
 
 #contactpage {
-    height: 350px;
-    background-color: rgb(8, 8, 8);
+    height: 100px;
+    /* background-color: rgb(8, 8, 8); */
+}
+
+#getintouch {
+    border: solid  rgb(8, 8, 8) 2px;
+    border-radius: 5px;
+    color:  rgb(8, 8, 8) !important;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 3px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contact-wrapper {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 700px;
+}
+
+#designcredit {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(39, 39, 39);
+    letter-spacing: 0.1em;
 }
 
 
