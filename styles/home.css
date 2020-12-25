@@ -8,7 +8,7 @@
     justify-content: center;
     flex-direction: row;
     text-align: center; 
-    height: 95%;
+    height: 93%;
     align-items: center;
 }
 
@@ -68,20 +68,7 @@
     margin-top: 15px;
 }
 
-.about-btn-selected {
-    border: solid white 1px;
-    border-radius: 5px;
-    color: white !important;
-}
-
 /* TECH STACK STYLES */
-.about-menu-btn {
-    margin-right: 8px;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
-    padding: 3px 12px;
-}
-
 #about-stack-content ul {
     columns: 3;
     -webkit-columns: 3;

@@ -27,23 +27,76 @@ p {
 }
 
 .page {
-    height: 95vh; 
+    height: 93%; 
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 7vh;
     font-family: 'Open Sans', sans-serif;
 }
 
 .pagewrapper-row {
-    height: 95%;
+    height: 93%;
 }
 
-button {
-    border: none; 
-    background-color: transparent;
+/* button styling */
+button {border: none; background-color: transparent;}
+button:focus {outline: none;}
+
+/* about and stack button */
+.menu-btn {margin-left: 25px;}
+.menu-spn {font-family: 'Noto Sans', sans-serif; font-size: 18px;}
+.about-menu-btn-selected {
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 3px 12px;
+    border: solid  rgb(230, 230, 230) 2px;
+    color: rgb(230, 230, 230);
+    border-radius: 5px;
 }
 
-button:focus {
-    outline: none;
+.about-menu-btn {
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 3px 12px;
+    border: solid  rgb(56, 56, 56) 2px;
+    color: rgb(56, 56, 56);
+    border-radius: 5px;
+}
+
+.about-menu-btn:hover {border: solid  rgb(230, 230, 230) 2px; color: rgb(230, 230, 230);}
+.about-menu-btn:focus {border: solid  rgb(230, 230, 230) 2px; color: rgb(230, 230, 230);}
+
+
+/* say hello buttons */
+#getintouch, #getintouchmenu {
+    width: 100px;
+    height: 33px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 5px;
+}
+
+#getintouch {
+    border: solid  rgb(8, 8, 8) 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#getintouchmenu {
+    border: solid  rgb(230, 230, 230) 2px;
+    margin: auto 0;
+    margin-left: 25px;
+}
+
+#getintouch:hover {
+    background-color: rgb(8, 8, 8);
+    color: rgb(230, 230, 230);
+}
+
+#getintouchmenu:hover {
+    background-color: rgb(230, 230, 230);
+    color: rgb(8, 8, 8);
 }
 
 /* GRID STYLES */
@@ -118,30 +171,27 @@ h3 {
 .col-9 {width: 75%; height: 100%;}
 .col-10 {width: 83.33%; height: 100%;}
 .col-11 {width: 91.66%; height: 100%;}
-.col-12 {width: 100%; height: 100%;}
+.col-12 {width: 100%; }
 
 /* FIXED COMPONENT STYLES */
 /* fixed menubar */
 .menubar-wrapper {
     width: 100%;
-    position: fixed;
-    height: 5vh;
+    height: 100%;
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
+    align-content: center;
+}
+
+.menubar-container {
+    position: fixed;
+    top: 0px;
+    height: 7vh;
+    width: 100%;
     background-color: rgba(8, 8, 8, 0.979);
-    padding-right: 60px;
-}
-
-
-.menu-btn {
-    margin-left: 25px;
-}
-
-.menu-spn {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
-}
+    padding-right: 50px;
+}   
 
 /* fixed contact information */
 .contact-container {
@@ -209,6 +259,7 @@ svg:hover {
     text-decoration: none !important;
     color: rgb(56, 56, 56);
     font-weight: 700;
+    display: flex;
 }
 
 #mailto-link:hover {

@@ -2,6 +2,7 @@ $(document).ready(function(){
     // general
     $("#about-stack-content").css("display", "none")
     $("#mailto-link-black").css("display", "none")
+    $("#see-about").addClass(".about-btn-selected")
 
     // page displays
     $("#aboutpage, #workpage, #contactpage").css("display","none");
@@ -16,6 +17,9 @@ $(document).ready(function(){
         $("#mailto-link-white").addClass("text-blur-out")
         $("#mailto-link-white").css("display", "none")
         $("#mailto-link-black").css("display", "inherit")
+
+        $("#see-about").trigger("click")
+        $("#see-about").removeClass("about-menu-btn"); $("#see-about").addClass("about-menu-btn-selected")
     })
 
     $(".arrowto-about").on("click", function(){
@@ -31,21 +35,21 @@ $(document).ready(function(){
         $('#contact-btn').removeClass("grey"); $('#contact-btn').addClass("offW")
 
         $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
-        $('about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
+        $('#about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
     })
 
 
     // show about/stack display
     $("#see-stack").on("click", function(){
+        $("#see-about").removeClass("about-menu-btn-selected"); $("#see-about").addClass("about-menu-btn")
         $('#about-content').addClass("slide-out-left"); $('#about-content').css("display","none") 
         $('#about-stack-content').css("display","inherit"); $('#about-stack-content').addClass("slide-in-right")   
-        $('#see-stack').addClass("about-btn-selected"); $('#see-about').removeClass("about-btn-selected")   
     })
 
     $("#see-about").on("click", function(){
+        $("#see-about").removeClass("about-menu-btn-selected"); $("#see-about").addClass("about-menu-btn")
         $('#about-stack-content').addClass("slide-out-left"); $('#about-stack-content').css("display","none")
         $('#about-content').css("display","inherit"); $('#about-content').addClass("slide-in-right")   
-        $('#see-about').addClass("about-btn-selected"); $('#see-stack').removeClass("about-btn-selected")   
     })
 
     // contact bar change color logic

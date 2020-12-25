@@ -1,92 +1,73 @@
 #workpage {
     height: auto !important;
-    min-height: 95vh;
-    padding-top: 5vh;
+    min-height: 93vh;
+    padding-top: 7vh;
 }
-
 .project-wrapper {
     height: 370px;
     font-size: 12px;
     margin-bottom: 100px;
 }
-
 .project-description-wrapper-left {
     text-align: left;
     padding-left: 30px;
 }
-
 .project-description-wrapper-right {
     text-align: right;
     padding-right: 30px;
 }
-
 #workheader-wrapper {
     height: 10%;
     padding-top: 35px;
 }
-
 .work-header-col {
     margin-bottom: 15px;
     margin-left: -40px;
 }
-
 .project-title {
     font-size: 22px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
 }
-
 .project-title-sub {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
-
 .project-details {
     margin-top: 14px !important;
     font-size: 14px;
 }
-
 .project-desc {
     font-size: 13px;
 }
-
 .project-img {
     width: 100%;
     border-radius: 7px;
 }
-
 .svg-wrapper {
     margin-top: 25px;
 }
-
 .project-img-wrapper-desk, .project-img-wrapper-mobile {
     display: flex;
     flex-direction: column;  
     justify-content: center;
     align-items: center;
 }
-
 .project-desc-wrapper {
     display: flex;
     flex-direction: column;  
     justify-content: center; 
 }
-
 .project-description-wrapper-left { text-align: left; }
 .project-description-wrapper-right { text-align: right; }
-
-
 .mobileview-project-row {
     display: none;
 }
-
 .desktopview-project-row {
     height: 100%;
     width: 100%;
 }
-
-
 
 /* contact styles */
 #contactpage {
@@ -94,21 +75,10 @@
     /* background-color: rgb(8, 8, 8); */
 }
 
-#getintouch {
-    border: solid  rgb(8, 8, 8) 2px;
-    border-radius: 5px;
-    color:  rgb(8, 8, 8) !important;
-    font-size: 14px;
-    font-family: 'Noto Sans', sans-serif;
-    padding: 3px 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100px;
-}
-
 #contact-wrapper {
     text-align: center;
     font-weight: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -116,7 +86,6 @@
     padding-bottom: 25px;
 
 }
-
 #designcredit {
     font-family: 'Noto Sans', sans-serif;
     font-size: 12px;
@@ -125,6 +94,8 @@
     letter-spacing: 0.1em;
 }
 
+
+/* media queries */
 @media only screen and (max-width: 768px)  {
     .desktopview-project-row { display: none; }
     .project-img-wrapper-mobile {margin-bottom: 20px; margin-top: 35px;}
@@ -141,18 +112,15 @@
     .project-desc-mobile {
         padding-left: 8.33%; padding-right: 8.33%; margin-bottom: 50px;
     }
+    .work-header-col {
+        margin-left: -20px;
+    }
 }
 
 @media only screen and (max-width: 900px){
-    .project-title {
-        font-size: 20px;
-    }
-    .project-title-sub {
-        font-size: 15px;
-    }
-    .project-details {
-        font-size: 13px;
-    }
+    .project-title {font-size: 20px; }
+    .project-title-sub {font-size: 15px; }
+    .project-details {font-size: 13px; }
 }
 
 
