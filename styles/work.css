@@ -62,12 +62,20 @@
 .project-details-right{
     text-align: right;
 }
-.project-img-wrapper-desk, .project-img-wrapper-mobile {
+.project-img-wrapper-desk {
     display: flex;
     flex-direction: column;  
     justify-content: center;
     align-items: center;
 }
+
+.mobile-img-link {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
 .project-desc-wrapper {
     display: flex;
     flex-direction: column;  
@@ -130,7 +138,7 @@
         height: 10%;
     }
     .project-desc-mobile {
-        padding-left: 8.33%; padding-right: 8.33%; margin-bottom: 50px;
+        padding-left: 9%; padding-right: 9%; margin-bottom: 50px;
     }
     .work-header-col {
         margin-left: -20px;
