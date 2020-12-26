@@ -28,14 +28,18 @@
     font-size: 22px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
+    border-bottom: solid black 1px;
+    width: auto;
+    padding-bottom: 7px;
 }
 .project-title-sub {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    padding-top: 5px;
 }
 .project-details {
-    margin-top: 14px !important;
+    margin-top: 14px !important; margin-bottom: 7px !important;
     font-size: 14px;
 }
 .project-desc {
@@ -45,6 +49,8 @@
     width: 100%;
     border-radius: 7px;
 }
+
+
 .svg-wrapper-right, .svg-wrapper-left {
     margin-top: 25px;
 }
@@ -127,6 +133,17 @@
     .project-title {font-size: 20px; }
     .project-title-sub {font-size: 15px; }
     .project-details {font-size: 13px; }
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .project-details-right{
+        text-align: left;
+    }
+    .svg-wrapper-right {
+        justify-content: flex-start;
+    }
 }
 
 

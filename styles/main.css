@@ -41,6 +41,10 @@ p {
 button {border: none; background-color: transparent;}
 button:focus {outline: none;}
 
+.menu-btn:hover {cursor: pointer; }
+button:hover {cursor: pointer; }
+svg:hover {cursor: pointer; }
+
 /* about and stack button */
 .menu-btn {margin-left: 25px;}
 .menu-spn {font-family: 'Noto Sans', sans-serif; font-size: 18px;}
@@ -178,8 +182,8 @@ button:focus {outline: none;}
   }
   
 .slide-in-bottom {
-	-webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 } 
 
 /* ----------------------------------------------
@@ -339,6 +343,7 @@ h3 {
     height: 100px;
 }
 
+
 .icon-wrapper {
     width: 20px;
     height: 20px;
@@ -369,10 +374,6 @@ h3 {
     justify-content: center;
 }
 
-svg:hover {
-    fill: rgb(230, 230, 230);
-}
-
 .email-wrapper {
     height: 100%;
     width: 100%;
@@ -384,11 +385,6 @@ svg:hover {
     font-weight: 700;
     display: flex;
 }
-
-#mailto-link:hover {
-    color:  rgb(230, 230, 230);
-}
-
 /* animation lines */
 .animation-line-vt {
     width: 1px;
@@ -405,6 +401,7 @@ svg:hover {
         height: 100%;
     }
 }
+
 
 /* fixed nav styles */
 .nav-arrow-wrapper {
