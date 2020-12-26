@@ -64,31 +64,70 @@ $(document).ready(function(){
     })
 
     // scroll positioning + animation
+
+    let prevscroll = 0;
+
     window.onscroll = function(event) {
 
         let homepageheight = $("#homepage").height();
+        let halfhomepageheight = homepageheight * 1.36; console.log("HALF HOMEPAGE HEIGHT " + halfhomepageheight)
         var scrollPoint = window.scrollY + window.innerHeight; console.log("SCROLLPOINT " + scrollPoint)
 
-        // HIT PROJECT PAGE
-        if(scrollPoint >= homepageheight){
-            let pxtoProjectOne = homepageheight + ($(".menubar-container").height() * 2) + $(".nav-arrow-wrapper").height() + ($("#workheader-wrapper").height() + 35) + 120; console.log("project one height: " + pxtoProjectOne) 
-            let pxtoProjectTwo = pxtoProjectOne + 100 + $(".project-desc-wrapper").height(); console.log("project two height: " + pxtoProjectTwo)
+        // scrolling down
+        if (scrollPoint > prevscroll){
+            // animation
+            // HIT PROJECT PAGE
+            if(scrollPoint >= homepageheight){
+                let pxtoProjectOne = homepageheight + ($(".menubar-container").height() * 2) + $(".nav-arrow-wrapper").height() + ($("#workheader-wrapper").height() + 35) + 120; console.log("project one height: " + pxtoProjectOne) 
+                let pxtoProjectTwo = pxtoProjectOne + 100 + $(".project-desc-wrapper").height(); console.log("project two height: " + pxtoProjectTwo)
+                prevscroll = scrollPoint
+                // HIT PROJECT ONE PAGE
 
-        // HIT PROJECT ONE PAGE
-        if (scrollPoint >= pxtoProjectOne){
-            console.log("we are at project one")
-            $("#altgen-projtxt-wrapper").css("display", "flex")
-            $("#altgen-projtxt-wrapper").addClass("slide-in-bottom")
+            if (scrollPoint >= halfhomepageheight){
+                $('#about-btn').removeClass("offW"); $('#about-btn').addClass("grey")
+                $('#work-btn').removeClass("grey"); $('#work-btn').addClass("offW") 
 
-
-        // HIT PROJECT TWO PAGE
-            if (scrollPoint >= pxtoProjectTwo){
-                console.log("we are at project two")
-                $("#adopt-projtxt-wrapper p, #adopt-projtxt-wrapper div").css("display", "inline")
-                $("#adopt-projtxt-wrapper").addClass("slide-in-bottom")
+                if (scrollPoint >= pxtoProjectOne){
+                    console.log("we are at project one")
+                    $("#altgen-projtxt-wrapper").css("display", "flex")
+                    $("#altgen-projtxt-wrapper").addClass("slide-in-bottom")
+                    prevscroll = scrollPoint
+                // HIT PROJECT TWO PAGE
+                    if (scrollPoint >= pxtoProjectTwo){
+                        console.log("we are at project two")
+                        $("#adopt-projtxt-wrapper p, #adopt-projtxt-wrapper div").css("display", "inline")
+                        $("#adopt-projtxt-wrapper").addClass("slide-in-bottom")
+                        prevscroll = scrollPoint
+                    }
+                }
             }
+            } 
+        // scrolling up
+        } else if (scrollPoint < prevscroll) {
+            if (scrollPoint <= halfhomepageheight){
+                console.log("BACK TO ABOUT PAGE")
+                $('#about-btn').removeClass("grey"); $('#about-btn').addClass("offW")
+                $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
+            }
+            prevscroll = scrollPoint
         }
-        } 
+
+        // menubar
+
+
+        // if (scrollPoint <= halfhomepageheight){
+        //     // $('#about-btn').removeClass("grey"); $('#about-btn').addClass("offW")
+        //     // $('#work-btn').removeClass("offW"); $('#work-btn').addClass("grey")
+        //     window.addEventListener('wheel', function(event){
+
+        //     if (event.deltaY < 0){
+        //     console.log('scrolling up');
+        //     } else if (event.deltaY > 0){
+        //     console.log('scrolling down');}
+
+        //     });
+        // }
+
     };
 
 
