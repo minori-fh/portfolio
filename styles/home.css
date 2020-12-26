@@ -101,6 +101,18 @@ ul li svg {
     margin-right: 15px;
 }
 
+#stack-table, #stack-table-small {
+  height: 65%;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+}
+
+#stack-table-small {
+  display: none;
+  font-size: 13px;
+}
+
 /* ANIMATIONS */
 .slide-out-left {
 	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -193,6 +205,15 @@ ul li svg {
     #hello-sub {padding-left: 60px;}
 }
 
+@media only screen and (max-width: 900px){
+  #stack-table {
+    font-size: 13px;
+  }
+  .tech-arrow {
+    margin-right: 5px;
+  }
+}
+
 /* TABLET */
 @media only screen and (min-width: 600px) and (max-width: 768px)  {
     #intro {font-size: 16px;}
@@ -209,16 +230,18 @@ ul li svg {
         -webkit-columns: 2;
         -moz-columns: 2;
     }
+    #stack-table {
+      display: none;
+    }
+    #stack-table-small {
+      display: table;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     #hello-txt {display: none;}
     #intro {font-size: 16px;}   
     #hello-sub {padding-left: 0px !important;}
-    #about-stack-content ul {
-      padding-right: 11%;
-      font-size: 13px;
-  }
 }
 
 
