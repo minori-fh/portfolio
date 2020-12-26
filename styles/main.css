@@ -74,7 +74,7 @@ svg:hover {cursor: pointer; }
 
 /* say hello buttons */
 #getintouch, #getintouchmenu {
-    width: 100px;
+    width: 110px;
     height: 33px;
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
@@ -477,5 +477,8 @@ h3 {
 
     #hello-txt {display: none;}
     h2 {font-size: 28px;}
+
+    #getintouchmenu {margin-left: 10px;}
+    .menu-btn {margin-left: 10px;}
 }
 
