@@ -242,6 +242,12 @@ ul li svg {
     #hello-txt {display: none;}
     #intro {font-size: 16px;}   
     #hello-sub {padding-left: 0px !important;}
+    #stack-table {
+      display: none;
+    }
+    #stack-table-small {
+      display: table;
+    }
 }
 
 
