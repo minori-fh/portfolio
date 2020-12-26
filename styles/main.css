@@ -28,7 +28,8 @@ p {
 
 .page {
     height: 93%; 
-    width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     margin-top: 7vh;
     font-family: 'Open Sans', sans-serif;
 }
@@ -240,6 +241,12 @@ svg:hover {cursor: pointer; }
 }
 
 /* row styling */
+
+.row {
+    width: 100%;
+    max-width: 100%;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -303,21 +310,21 @@ h3 {
 /* FIXED COMPONENT STYLES */
 /* fixed menubar */
 .menubar-wrapper {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row; 
     justify-content: flex-end;
     align-content: center;
+    padding-right: 50px;
 }
 
 .menubar-container {
     position: fixed;
     top: 0px;
     height: 7vh;
-    width: 100%;
+    overflow: hidden;
+    width: 100vw !important;
     background-color: rgba(8, 8, 8, 0.979);
-    padding-right: 50px;
 }   
 
 /* fixed contact information */
@@ -478,7 +485,12 @@ h3 {
     #hello-txt {display: none;}
     h2 {font-size: 28px;}
 
-    #getintouchmenu {margin-left: 10px;}
+    #getintouchmenu {margin-left: 15px;}
     .menu-btn {margin-left: 10px;}
+
+    .menubar-wrapper {
+        padding-right: 0px;
+        justify-content: space-evenly;
+    }
 }
 
