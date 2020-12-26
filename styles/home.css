@@ -1,5 +1,7 @@
 #homepage {
   background-color: rgb(0, 0, 0);
+  height: 100% !important; 
+  margin-top: 0px !important;
 }
 
 /* HEL LO text styles */

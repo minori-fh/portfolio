@@ -3,6 +3,8 @@ $(document).ready(function(){
     $("#about-stack-content").css("display", "none")
     $("#mailto-link-black").css("display", "none")
     $("#see-about").addClass(".about-btn-selected")
+    $("#altgen-projtxt-wrapper").css("display", "none")
+    $("#adopt-projtxt-wrapper p, #adopt-projtxt-wrapper div").css("display", "none")
 
     // page displays
     $("#aboutpage, #workpage, #contactpage").css("display","none");
@@ -52,6 +54,44 @@ $(document).ready(function(){
         $('#about-content').css("display","inherit"); $('#about-content').addClass("slide-in-right")   
     })
 
+    // animations
+    $("#getintouch, #getintouchmenu").mouseover(function(){
+        $(this).addClass("jello-horizontal")
+    })
+
+    $("#getintouch, #getintouchmenu").mouseleave(function(){
+        $(this).removeClass("jello-horizontal")
+    })
+
+    // scroll positioning + animation
+    window.onscroll = function(event) {
+
+        let homepageheight = $("#homepage").height();
+        var scrollPoint = window.scrollY + window.innerHeight; console.log("SCROLLPOINT " + scrollPoint)
+
+        // HIT PROJECT PAGE
+        if(scrollPoint >= homepageheight){
+            let pxtoProjectOne = homepageheight + ($(".menubar-container").height() * 2) + $(".nav-arrow-wrapper").height() + ($("#workheader-wrapper").height() + 35) + 120; console.log("project one height: " + pxtoProjectOne) 
+            let pxtoProjectTwo = pxtoProjectOne + 100 + $(".project-desc-wrapper").height(); console.log("project two height: " + pxtoProjectTwo)
+
+        // HIT PROJECT ONE PAGE
+        if (scrollPoint >= pxtoProjectOne){
+            console.log("we are at project one")
+            $("#altgen-projtxt-wrapper").css("display", "flex")
+            $("#altgen-projtxt-wrapper").addClass("slide-in-bottom")
+
+
+        // HIT PROJECT TWO PAGE
+            if (scrollPoint >= pxtoProjectTwo){
+                console.log("we are at project two")
+                $("#adopt-projtxt-wrapper p, #adopt-projtxt-wrapper div").css("display", "inline")
+                $("#adopt-projtxt-wrapper").addClass("slide-in-bottom")
+            }
+        }
+        } 
+    };
+
+
     // contact bar change color logic
     $('#front').height($('#back').height())
 
@@ -63,13 +103,11 @@ $(document).ready(function(){
 
     console.log("MB " + mb)
 
-    window.onscroll = function(event) {
-        scrollpx = $(window).scrollTop(); console.log(scrollpx)
-
-        if(scrollpx > mb){
-
-        }
-    };
+    // window.onscroll = function(event) {
+    //     console.log(scrollpx)
+    //     altInViewport()
+    //     adoptInViewport()
+    // };
 
     percent_complete = 45
     bb_width = (percent_complete * $('#back').height())/100
