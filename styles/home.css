@@ -70,6 +70,9 @@
     margin-top: 15px;
 }
 
+#about-stack-content {
+  width: 80% !important;
+}
 /* TECH STACK STYLES */
 #about-stack-content ul {
     columns: 3;
@@ -205,9 +208,15 @@ ul li svg {
     #hello-sub {padding-left: 60px;}
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1030px){
   #stack-table {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  #stack-table {
+    font-size: 12px;
   }
   .tech-arrow {
     margin-right: 5px;
