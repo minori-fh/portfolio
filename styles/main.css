@@ -9,17 +9,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
 /* GENERIC STYLES */
-* {
-    box-sizing: border-box;
-}
-
 html, body {
+    box-sizing: border-box;
     height: 100%; 
     width: 100%;
     max-width: 100%;
     margin: 0px; 
     padding: 0px;
     color: rgb(8, 8, 8);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 p {
